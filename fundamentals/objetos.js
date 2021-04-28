@@ -1,4 +1,4 @@
-// Objetos
+// Objetos o diccionarios 
 
 
 // N propiedades
