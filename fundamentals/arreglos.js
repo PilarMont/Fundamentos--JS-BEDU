@@ -105,12 +105,54 @@ let numeros =[1,2,3,4,5,6,7,8,9,10];
         console.log( numeros[i] * numeros [i])
         
     }
-// EJERCICIO TATEA 1
-let numerosTarea =[1,2,3,4,5,6,7,8,9,10];
-    for (let i = 0; i < numeros.length; i++) {
-    console.log( numeros[i] * numeros [i])
+ //EJERCICIO TATEA 1 multiplicar cada número por los números del array
+
+ //INTENTO 1
+  /*  let tabla = [1,2,3,4,5,6,7,8,9,10];
+
+    for (let i = 1; i <= tabla.length; i++) {
+    console.log(tabla[0] + "x" + [i] + "="+ (tabla[0]*[i]));
+    console.log(tabla[1] + "x" + [i] + "="+ (tabla[1]*[i])); 
+    console.log(tabla[2] + "x" + [i] + "="+ (tabla[2]*[i])); 
+    console.log(tabla[3] + "x" + [i] + "="+ (tabla[3]*[i])); 
+    console.log(tabla[4] + "x" + [i] + "="+ (tabla[4]*[i])); 
+    console.log(tabla[5] + "x" + [i] + "="+ (tabla[5]*[i])); 
+    console.log(tabla[6] + "x" + [i] + "="+ (tabla[6]*[i])); 
+    console.log(tabla[7] + "x" + [i] + "="+ (tabla[7]*[i])); 
+    console.log(tabla[8] + "x" + [i] + "="+ (tabla[8]*[i])); 
+    console.log(tabla[9] + "x" + [i] + "="+ (tabla[9]*[i])); 
+
+}*/
+
+//INTENTO 2 
+/*let tabla1 = [1,2,3,4,5,6,7,8,9,10];
+
+for (let i = 0; i < tabla1.length; i++)
+{
+    for (let j = 1; j < tabla1.length; j++) 
+    {
+        console.log(tabla1[i] + "x" + [j] + "="+ (tabla1[i]*[j]));
+    }
+
+}/*
+
+/* EJERCICIO TATEA 2 
+*Sobre el mismo array del 1 al 10,multiplicar el primer numero con el ultimo numero
+*Luego multiplicar el segundo numero con el penultimo y así hasta que termine el array*/
     
+
+const tablaArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for (let x = 0; x < tablaArray.length; x++) 
+{
+    for (let y = tablaArray; y < 0 ; y++) 
+    {
+        console.log(tablaArray[i] + "x" + [j] + "="+ (tablaArray[i]*[j]));  
+    }
+  
 }
 
-// EJERCICIO TATEA 2
 
+
+
+   
