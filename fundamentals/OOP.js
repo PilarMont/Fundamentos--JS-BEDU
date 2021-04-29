@@ -68,12 +68,15 @@ class PersonA {
    }
 
 // mi incremento va en el método
-    edad () {
+    edad() {
         this.counterEdad++
-        return `Tengo ${this.age} años de edad`
+        const actualYear = new Date().getFullYear()
+        const birthYear = new Date(this.age).getFullYear()
+    
+        return `Tengo ${actualYear - birthYear} años de edad`
     }
    get edadCounter(){
-        return this.edadSaludo
+        return this.counterEdad
     }
 
    }
@@ -93,3 +96,72 @@ class PersonA {
    console.log ("Pablo counter saludo ==>", Pablo.counterSaludo)
    Vir.incrementarCounter()
    console.log ("Virgile counter edad ==>", Vir.counterEdad)
+
+   /**
+ * Ejercicio 1
+ * 1.- Crear una clase personal
+ * 2.- Vamos a crear un metodo que salude con nuestro nombre
+ * 3.- Vamos a crear un metodo que diga que edad tenemos
+ * Tiempo: 10min
+ */
+/**
+ * Ejercicio 2
+ * 1.- Sobre la misma clase que tienen
+ * 2.- Crear un getter que devuelva la cantidad de veces que han mandado a ejecutar "saludar()"
+ * 3.- Crear un getter que también devuelva la cantidad de veces que han mandado a ejecutar "edad()"
+ * Tiempo: 10min
+ */
+
+class personal{
+  constructor (name, age){
+    this.name = name
+    this. age = age
+    this.counter = 0
+    this.counterSaludo = 0
+    this.counterEdad = 0
+    
+  }
+
+  saludoPersonal(){
+    this.counterSaludo++
+    return `¡Hola mi nombre es ${this.name}!`
+  }
+
+  edadPersonal(){
+    this.counterEdad++
+    const actualYear = new Date().getFullYear() // fecha actual 
+    const birthYear = new Date(this.age).getFullYear()
+    return `Tengo ${actualYear - birthYear -1} años de edad` // puse -1 porque cuenta un año de más 
+  }
+  
+  incrementarCounter(){
+    this.counter++
+  }
+  
+  get counterSaludoPersonal() {
+    return this.counterSaludo
+  }
+  
+
+  get counterEdadPersonal(){
+    return this.counterEdad
+  }
+
+}
+
+const Pilar = new personal ("Pilar Montes", "1992" )
+
+console.log ( "Mi nombre===>", Pilar.saludoPersonal())
+console.log ( "Mi nombre===>", Pilar.saludoPersonal())
+console.log ( "Mi nombre===>", Pilar.saludoPersonal())
+console.log ( "Mi nombre===>", Pilar.saludoPersonal())
+
+console.log ("Edad Pilar ===>", Pilar.edadPersonal())
+console.log ("Edad Pilar ===>", Pilar.edadPersonal())
+
+Pilar .incrementarCounter()
+  console.log ("Veces que se imprimió el saludo==>", Pilar.counterSaludo)
+
+Pilar.incrementarCounter()
+  console.log ("Veces que se imprimió la edad ==>", Pilar.counterEdad)
+
