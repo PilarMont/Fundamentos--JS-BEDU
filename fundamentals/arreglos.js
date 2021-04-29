@@ -108,7 +108,7 @@ let numeros =[1,2,3,4,5,6,7,8,9,10];
  //EJERCICIO TATEA 1 multiplicar cada número por los números del array
 
  //INTENTO 1
-  /*  let tabla = [1,2,3,4,5,6,7,8,9,10];
+    let tabla = [1,2,3,4,5,6,7,8,9,10];
 
     for (let i = 1; i <= tabla.length; i++) {
     console.log(tabla[0] + "x" + [i] + "="+ (tabla[0]*[i]));
@@ -122,10 +122,10 @@ let numeros =[1,2,3,4,5,6,7,8,9,10];
     console.log(tabla[8] + "x" + [i] + "="+ (tabla[8]*[i])); 
     console.log(tabla[9] + "x" + [i] + "="+ (tabla[9]*[i])); 
 
-}*/
+}
 
 //INTENTO 2 
-/*let tabla1 = [1,2,3,4,5,6,7,8,9,10];
+let tabla1 = [1,2,3,4,5,6,7,8,9,10];
 
 for (let i = 0; i < tabla1.length; i++)
 {
@@ -134,23 +134,24 @@ for (let i = 0; i < tabla1.length; i++)
         console.log(tabla1[i] + "x" + [j] + "="+ (tabla1[i]*[j]));
     }
 
-}/*
+}
 
 /* EJERCICIO TATEA 2 
 *Sobre el mismo array del 1 al 10,multiplicar el primer numero con el ultimo numero
 *Luego multiplicar el segundo numero con el penultimo y así hasta que termine el array*/
     
-
+/*
 const tablaArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 for (let x = 0; x < tablaArray.length; x++) 
 {
-    for (let y = tablaArray; y < 0 ; y++) 
+    for (let y = tablaArray; y <= 0 ; y++) 
     {
         console.log(tablaArray[i] + "x" + [j] + "="+ (tablaArray[i]*[j]));  
     }
   
-}
+}*/
+
 
 
 
