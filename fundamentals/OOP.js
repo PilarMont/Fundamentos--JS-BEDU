@@ -165,3 +165,57 @@ Pilar .incrementarCounter()
 Pilar.incrementarCounter()
   console.log ("Veces que se imprimió la edad ==>", Pilar.counterEdad)
 
+//TAREA DE IMC
+  class calculoImc{
+    constructor (name, weight, heigh){
+      this.name = name
+      this.weight = weight
+      this.heigh= heigh
+    }
+
+      calculoImc(){
+        return `El imc es ${this.name}/${this.heigh}*${this.heigh}`
+      }
+  }
+
+  //Clase hija
+
+  class DatosCompletos extends Imc{
+      constructor (name, weight, heigh, genre){
+      super (genre,age)
+      this.genre
+      this.age
+    }
+
+    nombre(){
+    return `El nombre del paciente es ${this.name}`
+  }
+
+    peso(){
+      return `El peso del paciente es ${this.weight}`
+    }
+
+    altura(){
+      return `La altura del paciente es ${this.heigh}`
+    }
+
+    edad(){
+      const actualYear = new Date().getFullYear() // fecha actual 
+      const birthYear = new Date(this.age).getFullYear()
+      return `La edad del paciente es ${actualYear - birthYear -1}` 
+    }
+
+    genero(){
+      return `El género del paciente es ${this.genre}`
+
+    }
+
+  }
+
+  const Persona1 = new personal ("Pablo",78 ,1.81, "1995","masculino")
+
+  console.log("El nombre es ===>", Persona1.nombre())
+  console.log("El peso es ===>", Persona1.peso())
+  console.log("La altura es ===>", Persona1.altura())
+  console.log("La edad es ===>", Persona1.edad())
+  console.log("El género es ===>", Persona1.genero())

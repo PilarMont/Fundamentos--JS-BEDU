@@ -129,9 +129,9 @@ let tabla1 = [1,2,3,4,5,6,7,8,9,10];
 
 for (let i = 0; i < tabla1.length; i++)
 {
-    for (let j = 1; j < tabla1.length; j++) 
+    for (let j = 0; j < tabla1.length; j++) 
     {
-        console.log(tabla1[i] + "x" + [j] + "="+ (tabla1[i]*[j]));
+        console.log(tabla1[i] + "x" + tabla1[j] + "="+ (tabla1[i]*tabla1[j]));
     }
 
 }
