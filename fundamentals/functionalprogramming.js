@@ -118,7 +118,7 @@ const resultFilter = filterNumber(myOriginalArray)
 // console.log("myOriginalArray ===>", myOriginalArray)
 
 
-// REDUCE
+/* REDUCE
 // ["Bryan", "Montes", "Velazquez"]
 const reduceNumber = (array) => {
   // ["Bryan", "Montes", "Velazquez"]
@@ -138,16 +138,9 @@ const reduceNumber = (array) => {
 const resultReduced = reduceNumber(myOriginalArray)
 
 console.log("resultReduced ===>", resultReduced)
-console.log("myOriginalArray ===>", myOriginalArray)
+console.log("myOriginalArray ===>", myOriginalArray)*/
 
-/**
- * Ejercicio Tarea
- *  Ejemplo de arreglo: [15, 500, 95, 87, 34, 76]
- * 1.- Crear una función que retorne un arreglo iterado por un map que devuelva el numero al cuadrado
- * 2.- Crear una función que retorne los numeros impares de la respuesta de la función anterior
- * 3.- Crear una función que sume los numeros impares y devuelva la raíz cuadrada del resultado
- * IMPORTANTE: Tarea para el martes
- */
+
 
 /*Ejercicio 1
 *En una función pura devolver la multiplicación de [1,5,6] *2 en un nuevo array sin modificar el input original
@@ -246,5 +239,48 @@ const myObj = {
   
   console.log("After setProp ===>", myNewObj)
   console.log("After setProp ===>", myObj)
+/**
+ * Ejercicio Tarea
+ *  Ejemplo de arreglo: [15, 500, 95, 87, 34, 76]
+ * 1.- Crear una función que retorne un arreglo iterado por un map que devuelva el numero al cuadrado
+ * 2.- Crear una función que retorne los numeros impares de la respuesta de la función anterior
+ * 3.- Crear una función que sume los numeros impares y devuelva la raíz cuadrada del resultado
+ * IMPORTANTE: Tarea para el martes
+ */
 
-  
+/*1.- Crear una función que retorne un arreglo 
+iterado por un map que devuelva el numero al cuadrado*/
+
+const myNumbers =[15,500,95,87,34,76]
+
+const tarea1 = myNumbers.map(function(numAlCuadrado){
+  return Math.pow (numAlCuadrado,2);
+});
+
+console.log(tarea1)
+console.log(myNumbers)
+ 
+/*2.- Crear una función que retorne los numeros impares 
+de la respuesta de la función anterior*/
+
+const tarea2 = tarea1.filter((numeroI) => {
+  if (numeroI % 2 === 1) {
+    return numeroI   
+  }
+})
+
+console.log(tarea2)
+
+/*3.- Crear una función que sume los numeros impares 
+y devuelva la raíz cuadrada del resultado*/
+
+const tarea3 = (accumulador,valorActual) => accumulador + valorActual;
+
+console.log(tarea2.reduce(tarea3))
+
+const raiz2 = Math.sqrt (tarea2.reduce(tarea3));
+
+console.log(raiz2)
+
+
+
