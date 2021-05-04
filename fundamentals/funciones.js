@@ -10,24 +10,24 @@
 
 // Ejercicio 1 saludar a 3 personas con una función
 
-//function saludo (amigos){
+function saludo (amigos){
     /* amigos es un parámetro y lo sque esté entre () 
     en mis variables que declare*/
 
-    //return "hola " + amigos   /* esto del + es una CONCATENACIÓN... tabién podría ser
+    return `hola ${amigos}`   /* esto del + es una CONCATENACIÓN... tabién podría ser
     //return "hola" + " " + amigos y me da el mismo resultado*/
-//}
+}
  // lo que está ("") lo contiene el parámetro amigos 
-////var sofia = saludo ("Sofía")
-//var yadir = saludo ("Yadir")
-//var elena = saludo ("Elena")
+var sofia = saludo ("Sofía")
+var yadir = saludo ("Yadir")
+var elena = saludo ("Elena")
 
  /* con console.log imprimiré cada variable con la fucnión declarada 
  y dará el resultado de return */
 
-//console.log (sofia)
-//console.log (yadir)
-//console.log (elena) */
+console.log (sofia)
+console.log (yadir)
+console.log (elena) 
 
 //Ejercicio 2 dar la edad de personas con el año y funciones
 
@@ -114,11 +114,11 @@ console.log (edadSofia)
 
 //EJERCICIO 1 CON ARROW FUNCTION
 
-const saludo = (amigos) =>`Hola  ${amigos}`
+const saludo2 = (amigos) =>`Hola  ${amigos}`
 
- var sofia = saludo ("Sofía")
- var yadir = saludo ("Yadir")
- var elena = saludo ("Elena")
+ var sofia = saludo2 ("Sofía")
+ var yadir = saludo2 ("Yadir")
+ var elena = saludo2 ("Elena")
 
  console.log (sofia)
  console.log (yadir)
