@@ -239,6 +239,7 @@ const myObj = {
   
   console.log("After setProp ===>", myNewObj)
   console.log("After setProp ===>", myObj)
+
 /**
  * Ejercicio Tarea
  *  Ejemplo de arreglo: [15, 500, 95, 87, 34, 76]
@@ -257,8 +258,8 @@ const tarea1 = myNumbers.map(function(numAlCuadrado){
   return Math.pow (numAlCuadrado,2);
 });
 
-console.log(tarea1)
-console.log(myNumbers)
+console.log("array con método map==>",tarea1)
+console.log("No cambió mi constante original ==>",myNumbers)
  
 /*2.- Crear una función que retorne los numeros impares 
 de la respuesta de la función anterior*/
@@ -269,18 +270,18 @@ const tarea2 = tarea1.filter((numeroI) => {
   }
 })
 
-console.log(tarea2)
+console.log("array con método filter==>",tarea2)
 
 /*3.- Crear una función que sume los numeros impares 
 y devuelva la raíz cuadrada del resultado*/
 
 const tarea3 = (accumulador,valorActual) => accumulador + valorActual;
 
-console.log(tarea2.reduce(tarea3))
+console.log("array con reduce ==>",tarea2.reduce(tarea3))
 
 const raiz2 = Math.sqrt (tarea2.reduce(tarea3));
 
-console.log(raiz2)
+console.log("aplicando raíz cuadrada al resultado de reduce ==>",raiz2)
 
 
 
